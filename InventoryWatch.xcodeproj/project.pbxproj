@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D9AE54228F4252A00FE3204 /* bright-glockenspiel.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2D9AE54128F4252100FE3204 /* bright-glockenspiel.wav */; };
+		2D9AE54628F426B900FE3204 /* bright-glockenspiel.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2D9AE54528F426B400FE3204 /* bright-glockenspiel.caf */; };
 		380CF9FB27448E860080472A /* iPhoneModels13-intl.json in Resources */ = {isa = PBXBuildFile; fileRef = 380CF9FA27448E860080472A /* iPhoneModels13-intl.json */; };
 		3817268E273AA898003B8D76 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3817268D273AA898003B8D76 /* SettingsView.swift */; };
 		382981C328E3EA54008C68F7 /* AppleWatchUltra-intl.json in Resources */ = {isa = PBXBuildFile; fileRef = 382981C228E3EA54008C68F7 /* AppleWatchUltra-intl.json */; };
@@ -31,6 +33,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D9AE54128F4252100FE3204 /* bright-glockenspiel.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "bright-glockenspiel.wav"; sourceTree = "<group>"; };
+		2D9AE54528F426B400FE3204 /* bright-glockenspiel.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "bright-glockenspiel.caf"; sourceTree = "<group>"; };
 		380CF9FA27448E860080472A /* iPhoneModels13-intl.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "iPhoneModels13-intl.json"; sourceTree = "<group>"; };
 		3817268D273AA898003B8D76 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		382981C228E3EA54008C68F7 /* AppleWatchUltra-intl.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "AppleWatchUltra-intl.json"; sourceTree = "<group>"; };
@@ -67,6 +71,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D9AE53D28F41F5000FE3204 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				2D9AE53E28F41F5C00FE3204 /* Sounds */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		2D9AE53E28F41F5C00FE3204 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
 		386FDC4A2739DA7300C1BAC2 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +105,9 @@
 		386FDC552739DA7300C1BAC2 /* InventoryWatch */ = {
 			isa = PBXGroup;
 			children = (
+				2D9AE54528F426B400FE3204 /* bright-glockenspiel.caf */,
+				2D9AE54128F4252100FE3204 /* bright-glockenspiel.wav */,
+				2D9AE53D28F41F5000FE3204 /* Library */,
 				386FDC562739DA7300C1BAC2 /* InventoryWatchApp.swift */,
 				386FDC582739DA7300C1BAC2 /* ContentView.swift */,
 				3817268D273AA898003B8D76 /* SettingsView.swift */,
@@ -186,8 +208,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D9AE54228F4252A00FE3204 /* bright-glockenspiel.wav in Resources */,
 				387F6E7628CCF5B300E68AC0 /* iPhoneModels14-intl.json in Resources */,
 				38E4279E273EF542006BF6D7 /* Credits.rtf in Resources */,
+				2D9AE54628F426B900FE3204 /* bright-glockenspiel.caf in Resources */,
 				382981C328E3EA54008C68F7 /* AppleWatchUltra-intl.json in Resources */,
 				38DBAF39273D6692009992D8 /* Stores.json in Resources */,
 				380CF9FB27448E860080472A /* iPhoneModels13-intl.json in Resources */,
@@ -352,7 +376,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"InventoryWatch/Preview Content\"";
-				DEVELOPMENT_TEAM = 64A6JSYH8N;
+				DEVELOPMENT_TEAM = 66KU58LKH8;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -383,7 +407,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"InventoryWatch/Preview Content\"";
-				DEVELOPMENT_TEAM = 64A6JSYH8N;
+				DEVELOPMENT_TEAM = 66KU58LKH8;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

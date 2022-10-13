@@ -455,7 +455,7 @@ final class Model: ObservableObject {
             UserDefaults.standard.set(updateInterval, forKey: "preferredUpdateInterval")
         }
         
-        if let existingTimer = updateTimer, existingTimer.timeInterval != Double(updateInterval * 60) {
+        if let existingTimer = updateTimer, existingTimer.timeInterval != Double(updateInterval * 15) {
             existingTimer.invalidate()
             updateTimer = nil
         }
@@ -463,7 +463,7 @@ final class Model: ObservableObject {
         // Create new update timer if the user-setting is not "Never" (0) and
         // a timer does not already exist
         if updateInterval > 0 && updateTimer == nil {
-            let interval = Double(updateInterval * 60)
+            let interval = Double(updateInterval * 15)
             updateTimer = Timer.scheduledTimer(withTimeInterval: interval, repeats: true, block: { _ in
                 self.fetchLatestInventory()
             })
@@ -559,7 +559,7 @@ final class Model: ObservableObject {
             self.updateErrorState(to: .none)
             
             let df = DateFormatter()
-            df.dateFormat = "MMM d, h:mm a"
+            df.dateFormat = "MMM d, h:mm:ss a"
             let str = df.string(from: Date())
             UserDefaults.standard.setValue(str, forKey: "lastUpdateDate")
             

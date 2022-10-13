@@ -72,10 +72,12 @@ struct SettingsView: View {
                     
                     Picker("Update every", selection: $preferredUpdateInterval) {
                         Text("Never").tag(0)
-                        Text("1 minute").tag(1)
-                        Text("5 minutes").tag(5)
-                        Text("30 minutes").tag(30)
-                        Text("60 minutes").tag(60)
+                        Text("15 seconds").tag(1)
+                        Text("30 seconds").tag(2)
+                        Text("1 minute").tag(4)
+                        Text("5 minutes").tag(20)
+                        Text("30 minutes").tag(120)
+                        Text("60 minutes").tag(240)
                     }
                     
                     Toggle(isOn: $notifyOnlyForPreferredModels) {
@@ -247,6 +249,7 @@ struct SettingsView: View {
             let name = skuData.productName(forSKU: sku) ?? sku
             return ProductModel(sku: sku, name: name, isFavorite: favoriteSkus.contains(sku))
         }
+        allModels.sort{$0.name < $1.name}
     }
     
     func loadStores(filterText: String?) {

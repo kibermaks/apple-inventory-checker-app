@@ -29,6 +29,7 @@ final class NotificationManager: NSObject {
         let content = UNMutableNotificationContent()
         content.title = title
         content.body = body
+        content.sound = UNNotificationSound.criticalSoundNamed(UNNotificationSoundName(rawValue: "Glass.aiff"), withAudioVolume: 1)
         
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 1, repeats: false)
         
